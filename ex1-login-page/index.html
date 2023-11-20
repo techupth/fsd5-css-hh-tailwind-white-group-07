@@ -7,10 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CSS Framework (Tailwind) Exercise 1</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
-
-<body>
-  <!-- Start coding here -->
+<body class="bg-slate-200 flex flex-col justify-center items-center h-screen">
+  <form class="bg-white rounded-xl p-6">
+    <h1 class="text-zinc-600 text-xl">Login to this Website</h1>
+    <div class="login flex justify-between mt-3 font-semibold">
+      <label class="pr-5">Email</label>
+      <input class="border p-2 rounded-md" type="email">
+    </div>
+    <div class="login flex justify-between mt-4 font-semibold">
+      <label class="pr-5">Password</label>
+      <input class="border p-2 rounded-md" type="password">
+    </div>
+    <div class="pt-4 pb-1">
+      <button class="w-36 p-2 rounded-full text-white bg-violet-500 active:bg-violet-600 hover:bg-violet-100 focus:border-2 focus:border-violet-300 focus:text-white">Sign in</button>
+      <button class="w-36 p-2 rounded-full bg-white text-violet-600 hover:bg-violet-100 focus:border-2 focus:border-violet-300">Sign Up</button>
+    </div>
+  </form>
 </body>
 
 </html>
